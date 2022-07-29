@@ -21,4 +21,5 @@ Route::apiResource('categories', Api\CategoryController::class);
 Route::apiResource('tags', Api\TagController::class);
 
 Route::apiResource('ads', Api\AdController::class);
+Route::get('ads-filter', [Api\AdController::class, 'filter']);
 

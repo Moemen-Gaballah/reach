@@ -16,4 +16,9 @@ class Tag extends Model
     {
         return \Modules\Advertiser\Database\factories\TagFactory::new();
     }
+
+    public function ads()
+    {
+        return $this->belongsToMany(Ad::class);
+    }
 }

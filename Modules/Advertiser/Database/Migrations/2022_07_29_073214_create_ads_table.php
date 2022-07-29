@@ -16,7 +16,9 @@ class CreateAdsTable extends Migration
         Schema::create('ads', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('description');
+            $table->text('description');
+            $table->enum('type', ['free', 'paid'])->default('free');
+            $table->dateTime('start_date');
             $table->foreignId('category_id')->constrained()->onUpdate('cascade')->onDelete('cascade'); // TODO category Soft Deleted.
             $table->foreignId('advertiser_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();

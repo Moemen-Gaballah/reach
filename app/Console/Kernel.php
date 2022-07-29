@@ -4,9 +4,13 @@ namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use Modules\Advertiser\Console\NotifyAdvertiser;
 
 class Kernel extends ConsoleKernel
 {
+    protected $commands = [
+        NotifyAdvertiser::class,
+    ];
     /**
      * Define the application's command schedule.
      *
@@ -16,6 +20,8 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('inspire')->hourly();
+        $schedule->command('nofity:advertiser')
+            ->dailyAt('08:00');
     }
 
     /**

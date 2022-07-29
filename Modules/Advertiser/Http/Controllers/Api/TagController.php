@@ -24,7 +24,7 @@ class TagController extends Controller
      * Display a listing of the resource.
      * @return Renderable
      */
-    public function index()
+    public function index(Request $request)
     {
         $pageSize = $request->page_size ?? 12;
         $tags = $this->tagService->get($pageSize);

@@ -37,4 +37,8 @@ class Advertiser extends Model
     {
         return \Modules\Advertiser\Database\factories\AdvertiserFactory::new();
     }
+
+    public function ads(){
+        return $this->hasMany(Ad::class);
+    }
 }

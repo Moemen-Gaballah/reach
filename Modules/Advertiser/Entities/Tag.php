@@ -10,7 +10,7 @@ class Tag extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = [];
+    protected $fillable = ['name', 'status'];
 
     protected static function newFactory()
     {

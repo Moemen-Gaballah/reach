@@ -1,12 +1,13 @@
 <?php
 
-namespace Modules\Advertiser\Http\Controllers;
+namespace Modules\Advertiser\Http\Controllers\Api;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use function view;
 
-class TagController extends Controller
+class AdController extends Controller
 {
     /**
      * Display a listing of the resource.

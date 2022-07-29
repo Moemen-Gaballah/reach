@@ -18,3 +18,7 @@ Route::middleware('auth:api')->get('/advertiser', function (Request $request) {
 
 Route::apiResource('categories', Api\CategoryController::class);
 
+Route::apiResource('tags', Api\TagController::class);
+
+Route::apiResource('ads', Api\AdController::class);
+

@@ -16,6 +16,11 @@ class AdService
         return Ad::findOrFail($id);
     }
 
+    public function getAdsByAdvertiserId($id)
+    {
+        return Ad::where('advertiser_id', $id)->select('id', 'title')->paginate(12);
+    }
+
     public function store($data)
     {
         $ad = Ad::create($data);

@@ -41,41 +41,18 @@ class NotifyAdvertiser extends Command
      */
     public function handle()
     {
-        $adverisers = Advertiser::whereHas('ads', function ($query){
-            $query->whereDate('due_date', '=', \Carbon\Carbon::tomorrow());
+        $advertisers = Advertiser::whereHas('ads', function ($query){
+            $query->whereDate('start_date', '=', \Carbon\Carbon::tomorrow());
         })->get();
 
         // TODO Queue
         $details = [
-            'title' => 'Mail from ItSolutionStuff.com',
+            'title' => 'Mail from Ad.com ',
             'body' => 'This is for testing email using smtp'
         ];
-        foreach ($adverisers as $adverisers){
-            \Mail::to($adverisers->email)->send(new NotifyMail($details));
+        foreach ($advertisers as $advertiser){
+            \Mail::to($advertiser->email)->send(new NotifyMail($details));
         }
-    }
-
-    /**
-     * Get the console command arguments.
-     *
-     * @return array
-     */
-    protected function getArguments()
-    {
-        return [
-            ['example', InputArgument::REQUIRED, 'An example argument.'],
-        ];
-    }
-
-    /**
-     * Get the console command options.
-     *
-     * @return array
-     */
-    protected function getOptions()
-    {
-        return [
-            ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
-        ];
+        info('Done Successfully');
     }
 }

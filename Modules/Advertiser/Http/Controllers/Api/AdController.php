@@ -51,9 +51,11 @@ class AdController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function show($id)
+    public function getAdsByAdvertiserId($id)
     {
-        return view('advertiser::show');
+        $ads = $this->adService->getAdsByAdvertiserId($id);
+
+        return $this->sendResponse($ads);
     }
 
 

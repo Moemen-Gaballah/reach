@@ -20,6 +20,6 @@ Route::apiResource('categories', Api\CategoryController::class);
 
 Route::apiResource('tags', Api\TagController::class);
 
-Route::apiResource('ads', Api\AdController::class);
+Route::apiResource('ads', Api\AdController::class)->only('index', 'store');
 Route::get('ads-by-advertiser/{id}', [\Modules\Advertiser\Http\Controllers\Api\AdController::class, 'getAdsByAdvertiserId']);
 

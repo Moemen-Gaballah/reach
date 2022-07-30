@@ -51,43 +51,7 @@ Basic API Documentation : `http://127.0.0.1:8000/request-docs`
 
 ## Demo
 
-`Admin All Users.`
+`API Documentation.`
 
 ![image](https://raw.githubusercontent.com/Moemen-Gaballah/zarcony-task/main/public/demo/admin%20-%20all%20users.png)
-
-`Admin All Transactions +500,000 record.`
-![image](https://raw.githubusercontent.com/Moemen-Gaballah/zarcony-task/main/public/demo/admin%20-%20all%20trasnactions.png)
-
-`Admin Filter Search Transaction`
-
-![image](https://raw.githubusercontent.com/Moemen-Gaballah/zarcony-task/main/public/demo/filter%20transaction%20admin.png)
-
-
-`Admin Report Transaction not Complete.`
-
-![image](https://raw.githubusercontent.com/Moemen-Gaballah/zarcony-task/main/public/demo/reports%20-%20500%2C000%20record.png)
-
-`User Update Profile`
-
-![image](https://raw.githubusercontent.com/Moemen-Gaballah/zarcony-task/main/public/demo/update%20profile.png)
-
-`User create transaction`
-
-![image](https://raw.githubusercontent.com/Moemen-Gaballah/zarcony-task/main/public/demo/create_transaction.png)
-
-
-`User Validation Transaction`
-
-![image](https://raw.githubusercontent.com/Moemen-Gaballah/zarcony-task/main/public/demo/validation%20transaction.png)
-
-`Admin Logs`
-
-![image](https://raw.githubusercontent.com/Moemen-Gaballah/zarcony-task/main/public/demo/logs%20-%20admin%20.png)
-
-
-`ERD (Entity Relationship Diagram) `
-
-![image](https://raw.githubusercontent.com/Moemen-Gaballah/zarcony-task/main/public/demo/entity%20relationship%20diagram%20(ERD).png)
-
-
 

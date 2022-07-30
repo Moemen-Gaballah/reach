@@ -27,9 +27,13 @@ Set your database credentials in your `.env` file
 
 `php artisan serve`
 
+test `php artisan test`
+
 `http://127.0.0.1:8000/`
 
 Basic API Documentation : `http://127.0.0.1:8000/request-docs`
+
+Postman Collection in root project  : `reach.postman_collection.json`
 
 ### Done
 
@@ -41,11 +45,12 @@ Basic API Documentation : `http://127.0.0.1:8000/request-docs`
 - [x] Showing Advertiser Ads (Get Ads by Advertiser Id).
 - [x] schedule a daily email at 08:00 PM (Job)
 - [x] API Documentation
+- [x] Unit Test for create categories
 
 ### TODO
 - [] ERD (Entity Relationship Diagram)
 - [] API Documentation with Swagger
-- [] Unit test
+- [] complete Unit test
 - etc...
 
 
